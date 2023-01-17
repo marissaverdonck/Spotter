@@ -35,7 +35,7 @@ export function Index({ birds }: { birds: Birds[] }) {
 export async function getStaticProps(context) {
   const filePath = path.join(process.cwd(), 'apps/api/src', 'birds.json');
   const jsonData = await fs.readFile(filePath);
-  const data = JSON.parse(jsonData);
+  const data = JSON.parse(jsonData.toString());
 
   return { props: { birds: data.birds } };
 }
