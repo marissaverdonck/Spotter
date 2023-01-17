@@ -25,7 +25,7 @@ export function Question({ birds, step, setStep, setResult }: Props) {
     setResult(birds);
   }
 
-  function checkValue(event) {
+  function checkValue(event: any) {
     if (event.target.innerText === birds[step].name) {
       setGameResult(true);
       setStep(step + 1);

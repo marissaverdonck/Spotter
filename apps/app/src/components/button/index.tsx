@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import theme from '../../styles/theme';
 
 interface Props {
-  onClick?: () => void | Promise<void>;
+  onClick?: (e: any) => void | Promise<void>;
   children?: ReactNode;
 }
 
