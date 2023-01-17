@@ -44,7 +44,7 @@ export function Question({ birds, step, setStep, setResult }: Props) {
       <TextWrapper>
         <Title>Welke vogel is dit?</Title>
         <ButtonList>
-          {answerOptions.map((option: Birds) => {
+          {answerOptions.map((option: string) => {
             return (
               <Button
                 key={option}
