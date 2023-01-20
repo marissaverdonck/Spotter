@@ -2,31 +2,40 @@ import Link from 'next/link';
 import BirdSquare from '../../components/bird-square';
 import Layout from '../../components/main-layout';
 import { Header, HeaderWrapper, List, ListItem, TextWrapper } from './styles';
+import Image from 'next/image';
 
 export function Overview() {
   return (
     <>
       <Header>
         <HeaderWrapper>
-          <img src="/images/menu.svg" alt="menu" width="20px" height="20px" />
+          <Image src="/images/menu.svg" alt="menu" width="20" height="20" />
           <h2>Spotter</h2>
-          <img src="/images/logo.png" alt="logo" width="40px" height="40px" />
+          <Image src="/images/logo.png" alt="logo" width="40" height="40" />
         </HeaderWrapper>
       </Header>
       <Layout title="overview">
         <List>
-          <Link href="/game" passHref style={{ textDecoration: 'none' }}>
+          <Link
+            href="/game/tuinvogels"
+            passHref
+            style={{ textDecoration: 'none' }}
+          >
             <ListItem>
-              <BirdSquare birdImage={'roodborst.png'} size="small" />
+              <BirdSquare birdImage={'roodborst.png'} size="medium" />
               <TextWrapper>
                 <h3>1. Tuinvogels</h3>
                 <p>Raad de vogel aan de hand van afbeeldingen en namen.</p>
               </TextWrapper>
             </ListItem>
           </Link>
-          <Link href="/game" passHref style={{ textDecoration: 'none' }}>
+          <Link
+            href="/game/wadvogels"
+            passHref
+            style={{ textDecoration: 'none' }}
+          >
             <ListItem>
-              <BirdSquare birdImage={'bontbekplevier.png'} size="small" />
+              <BirdSquare birdImage={'bontbekplevier.png'} size="medium" />
               <TextWrapper>
                 <h3>2. Wadvogels</h3>
                 <p>Raad de vogel aan de hand van afbeeldingen en namen.</p>

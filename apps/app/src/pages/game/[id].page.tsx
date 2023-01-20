@@ -32,12 +32,27 @@ export function Index({ birds }: { birds: Birds[] }) {
   );
 }
 
-export async function getStaticProps(context) {
+export async function getStaticPaths() {
+  return {
+    paths: [
+      {
+        params: { id: 'wadvogels' },
+      },
+      {
+        params: { id: 'tuinvogels' },
+      },
+    ],
+    fallback: false,
+  };
+}
+
+export async function getStaticProps(context: any) {
+  const id = context.params.id;
   const filePath = path.join(process.cwd(), 'apps/api/src', 'birds.json');
   const jsonData = await fs.readFile(filePath);
   const data = JSON.parse(jsonData.toString());
-
-  return { props: { birds: data.birds } };
+  const filteredData = data.birds.filter((bird: Birds) => bird.type === id);
+  return { props: { birds: filteredData } };
 }
 
 export default Index;

@@ -1,5 +1,5 @@
 import { Bird, Circle, ImageWrapper, Leave, Step, Twig } from './styles';
-
+import Image from 'next/image';
 interface Props {
   birdImage: string;
   step?: string;
@@ -8,16 +8,22 @@ interface Props {
 export const BirdContentWrapper = ({ birdImage, step }: Props) => {
   return (
     <ImageWrapper>
-      <Twig src="/images/twig.png" alt="twig" />
+      <Twig>
+        <Image src="/images/twig.png" alt="twig" fill={true} />
+      </Twig>
       <Circle color="white">
-        <Bird src={`/images/${birdImage}`} alt="bird" />
+        <Bird>
+          <Image src={`/images/birds/${birdImage}`} alt="bird" fill={true} />
+        </Bird>
         {step && (
           <Step>
             <p>{step}</p>
           </Step>
         )}
       </Circle>
-      <Leave src="/images/leave.png" alt="leave" />
+      <Leave>
+        <Image src="/images/leave.png" alt="leave" fill={true} />
+      </Leave>
     </ImageWrapper>
   );
 };
