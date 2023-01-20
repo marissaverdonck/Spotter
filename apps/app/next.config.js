@@ -15,3 +15,7 @@ const nextConfig = {
 };
 
 module.exports = withNx(nextConfig);
+
+module.exports = {
+  pageExtensions: ['.tsx']
+}
