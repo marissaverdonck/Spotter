@@ -3,98 +3,146 @@
     {
       "id": 1,
       "name": "Roodborst",
-      "type": [
-        "Tuinvogel"
-      ],
+      "type": "tuinvogels",
       "image": "roodborst.png"
     },
     {
       "id": 2,
       "name": "Appelvink",
-      "type": [
-        "Tuinvogel"
-      ],
+      "type": "tuinvogels",
       "image": "appelvink.png"
     },
     {
       "id": 3,
       "name": "Blauwborst",
-      "type": [
-        "Tuinvogel"
-      ],
+      "type": "tuinvogels",
       "image": "blauwborst.png"
     },
     {
       "id": 4,
       "name": "Roodborsttapuit",
-      "type": [
-        "Tuinvogel"
-      ],
+      "type": "tuinvogels",
       "image": "roodborsttapuit.png"
     },
     {
       "id": 5,
       "name": "Groenling",
-      "type": [
-        "Tuinvogel"
-      ],
+      "type": "tuinvogels",
       "image": "groenling.png"
     },
     {
       "id": 6,
       "name": "Goudvink",
-      "type": [
-        "Tuinvogel"
-      ],
+      "type": "tuinvogels",
       "image": "goudvink.png"
     },
     {
       "id": 7,
       "name": "Bonte vliegenvanger",
-      "type": [
-        "Tuinvogel"
-      ],
+      "type": "tuinvogels",
       "image": "bontevliegenvanger.png"
     },
     {
       "id": 8,
       "name": "Boomkruiper",
-      "type": [
-        "Tuinvogel"
-      ],
+      "type": "tuinvogels",
       "image": "boomkruiper.png"
     },
     {
       "id": 9,
       "name": "Boomklever",
-      "type": [
-        "Tuinvogel"
-      ],
+      "type": "tuinvogels",
       "image": "boomklever.png"
     },
     {
       "id": 10,
       "name": "Gaai",
-      "type": [
-        "Tuinvogel"
-      ],
+      "type": "tuinvogels",
       "image": "gaai.png"
     },
     {
       "id": 11,
       "name": "Grote lijster",
-      "type": [
-        "Tuinvogel"
-      ],
+      "type": "tuinvogels",
       "image": "grotelijster.png"
     },
     {
-      "id": 6,
+      "id": 12,
       "name": "Grote bonte specht",
-      "type": [
-        "Tuinvogel"
-      ],
+      "type": "tuinvogels",
       "image": "grotebontespecht.png"
+    },
+    {
+      "id": 13,
+      "name": "Drieteenstrandloper",
+      "type": "wadvogels",
+      "image": "drieteenstrandloper.png"
+    },
+    {
+      "id": 14,
+      "name": "Bontbek plevier",
+      "type": "wadvogels",
+      "image": "bontbekplevier.png"
+    },
+    {
+      "id": 15,
+      "name": "Grote stern",
+      "type": "wadvogels",
+      "image": "grotestern.png"
+    },
+    {
+      "id": 16,
+      "name": "Kanoet",
+      "type": "wadvogels",
+      "image": "kanoet.png"
+    },
+    {
+      "id": 17,
+      "name": "Kleine strandloper",
+      "type": "wadvogels",
+      "image": "kleinestrandloper.png"
+    },
+    {
+      "id": 18,
+      "name": "Kokmeeuw",
+      "type": "wadvogels",
+      "image": "kokmeeuw.png"
+    },
+    {
+      "id": 19,
+      "name": "Lepelaar",
+      "type": "wadvogels",
+      "image": "lepelaar.png"
+    },
+    {
+      "id": 20,
+      "name": "Rosse grutto",
+      "type": "wadvogels",
+      "image": "rossegrutto.png"
+    },
+    {
+      "id": 21,
+      "name": "Strandplevier",
+      "type": "wadvogels",
+      "image": "strandplevier.png"
+    },
+    {
+      "id": 22,
+      "name": "Wulp",
+      "type": "wadvogels",
+      "image": "wulp.png"
+    },
+    {
+      "id": 23,
+      "name": "Visdief",
+      "type": "wadvogels",
+      "image": "visdief.png"
+    },
+    {
+      "id": 24,
+      "name": "Zilverplevier",
+      "type": "wadvogels",
+      "image": "zilverplevier.png"
     }
   ]
 }
