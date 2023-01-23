@@ -43,13 +43,13 @@ export function Overview() {
                 <p>Raad de vogel aan de hand van afbeeldingen.</p>
               </TextWrapper>
             </ListItem>
-            <ListItem>
+            {/* <ListItem>
               <BirdSquare birdImage={'blauwborst.png'} size="medium" />
               <TextWrapper>
                 <h3>3. Tuinvogels </h3>
                 <p>Raad de vogel aan de hand van geluid.</p>
               </TextWrapper>
-            </ListItem>
+            </ListItem> */}
           </Link>
         </List>
       </Layout>
