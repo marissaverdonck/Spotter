@@ -52,7 +52,8 @@ export async function getStaticProps(context: any) {
   const jsonData = await fs.readFile(filePath);
   const data = JSON.parse(jsonData.toString());
   const filteredData = data.birds.filter((bird: Birds) => bird.type === id);
-  return { props: { birds: filteredData } };
+  const shuffledBirds = [...filteredData].sort(() => 0.5 - Math.random());
+  return { props: { birds: shuffledBirds } };
 }
 
 export default Index;

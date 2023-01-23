@@ -11,8 +11,6 @@ const MainLayout = styled.div`
   padding: 0rem;
   max-width: 100vw;
   overflow: hidden;
-  @media (max-width: 480px) {
-  }
 `;
 
 export default function Layout({ title, children }: PropsWithChildren<Props>) {

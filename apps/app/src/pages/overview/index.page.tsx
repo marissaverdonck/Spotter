@@ -9,7 +9,9 @@ export function Overview() {
     <>
       <Header>
         <HeaderWrapper>
-          <Image src="/images/menu.svg" alt="menu" width="20" height="20" />
+          <div>
+            {/* <Image src="/images/menu.svg" alt="menu" width="20" height="20" /> */}
+          </div>
           <h2>Spotter</h2>
           <Image src="/images/logo.png" alt="logo" width="40" height="40" />
         </HeaderWrapper>
@@ -25,7 +27,7 @@ export function Overview() {
               <BirdSquare birdImage={'roodborst.png'} size="medium" />
               <TextWrapper>
                 <h3>1. Tuinvogels</h3>
-                <p>Raad de vogel aan de hand van afbeeldingen en namen.</p>
+                <p>Raad de vogel aan de hand van afbeeldingen.</p>
               </TextWrapper>
             </ListItem>
           </Link>
@@ -38,7 +40,14 @@ export function Overview() {
               <BirdSquare birdImage={'bontbekplevier.png'} size="medium" />
               <TextWrapper>
                 <h3>2. Wadvogels</h3>
-                <p>Raad de vogel aan de hand van afbeeldingen en namen.</p>
+                <p>Raad de vogel aan de hand van afbeeldingen.</p>
+              </TextWrapper>
+            </ListItem>
+            <ListItem>
+              <BirdSquare birdImage={'blauwborst.png'} size="medium" />
+              <TextWrapper>
+                <h3>3. Tuinvogels </h3>
+                <p>Raad de vogel aan de hand van geluid.</p>
               </TextWrapper>
             </ListItem>
           </Link>
