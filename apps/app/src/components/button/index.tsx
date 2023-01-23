@@ -11,7 +11,7 @@ const StyledButton = styled.button`
   background-color: #e05436;
   border: none;
   border-radius: 5px;
-  width: 10rem;
+  width: 13rem;
   padding: 1rem;
   text-align: center;
   display: block;
@@ -29,6 +29,7 @@ const ButtonLabel = styled.span`
   font-family: ${theme.fonts.body};
   font-size: ${theme.sizes.fontSizeXS};
   color: ${theme.colors.textColorLight};
+  word-break: break-word;
 `;
 
 export const Button = ({ onClick, children }: Props) => {

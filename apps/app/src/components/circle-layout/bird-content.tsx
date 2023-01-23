@@ -13,7 +13,12 @@ export const BirdContentWrapper = ({ birdImage, step }: Props) => {
       </Twig>
       <Circle color="white">
         <Bird>
-          <Image src={`/images/birds/${birdImage}`} alt="bird" fill={true} />
+          <Image
+            src={`/images/birds/${birdImage}`}
+            alt="bird"
+            fill={true}
+            key={birdImage}
+          />
         </Bird>
         {step && (
           <Step>

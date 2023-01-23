@@ -1,10 +1,16 @@
+import { Birds } from '@spotter/shared-types';
 import { Circle, ImageWrapper, Leave, Twig, ResultText } from './styles';
 import Image from 'next/image';
 interface Props {
-  result: number;
+  result: Birds[];
 }
 
 export const ResultContentWrapper = ({ result }: Props) => {
+  function amountOfRightAnswers() {
+    const filterItems = result.filter((bird) => bird.result === true);
+    return filterItems.length;
+  }
+
   return (
     <ImageWrapper>
       <Twig>
@@ -13,8 +19,8 @@ export const ResultContentWrapper = ({ result }: Props) => {
       <Circle color="yellow">
         <ResultText>
           <h1>Gefeliciteerd</h1>
-          <p>{`Je hebt ${result} ${
-            result === 1 ? 'vogel' : 'vogels'
+          <p>{`Je hebt ${amountOfRightAnswers()} van de ${result.length}  ${
+            amountOfRightAnswers() === 1 ? 'vogel' : 'vogels'
           } herkend uit de categorie tuinvogels`}</p>
         </ResultText>
       </Circle>

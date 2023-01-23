@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import theme from '../../styles/theme'
 
 export const ImageWrapper = styled.div`
@@ -19,6 +19,7 @@ export const Circle = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+  z-index: 1;
 `
 
 export const Step = styled.div`
@@ -36,13 +37,24 @@ export const Step = styled.div`
   align-items: center;
 `
 
+const loadImage = keyframes`
+0%{
+  opacity: 0;
+}
+100% {
+    opacity: 1;
+  }
+`
+
 export const Bird = styled.div`
   width: 11rem;
   height: 11rem;
   vertical-align: middle;
+  z-index:1;
   img {
     object-fit: contain;
     padding: 2rem;
+    animation: ${loadImage} .5s ease-in;
   }
   }
 `
@@ -53,6 +65,11 @@ export const Leave = styled.div`
   top: -2rem;
   width: 9rem;
   height: 16rem;
+  z-index:2;
+    @media screen and (max-width: 350px) {
+    z-index:0;
+  }
+}
 `
 export const Twig = styled.div`
   position: absolute;

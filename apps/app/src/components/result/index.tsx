@@ -16,14 +16,9 @@ interface Props {
 }
 
 export function Result({ result }: Props) {
-  function amountOfRightAnswers() {
-    const filterItems = result.filter((bird) => bird.result === true);
-    return filterItems.length;
-  }
-
   return (
     <>
-      <ResultContentWrapper result={amountOfRightAnswers()} />
+      <ResultContentWrapper result={result} />
       <List>
         {result.map((bird) => {
           return (
